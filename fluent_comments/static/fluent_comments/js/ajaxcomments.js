@@ -35,7 +35,7 @@
             $('.comment-reply-link').live('click', showThreadedReplyForm);
         }
 
-        $('.comment-cancel-reply-link').click(cancelThreadedReplyForm);
+        $('body').on('click', '.comment-cancel-reply-link', cancelThreadedReplyForm);
 
         var $all_forms = $('.js-comments-form');
         $all_forms
